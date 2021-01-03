@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jennifer Buege</title>
+    <link rel="stylesheet" href="css/stylesheet2.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/f6758dd020.js" crossorigin="anonymous"></script>
+
+    <!--Javascript function -->
+    <script type="text/javascript">
+        //Write a javascript function that is called onLoad (Put this function inside <script> in the HTML document).
+        //Generate a random number from 0 - 3 and store it in a variable.
+        function randoBackground() {
+            //Define an array of background image paths inside the function.
+            var backgroundImage = new Array({
+                background: "./images/polarBear.jpg",
+                logo: "./images/logo-white.png",
+                scroll: "./images/scroll.png"
+            }, {
+                background: "./images/sifaka.jpg",
+                logo: "./images/logo-white.png",
+                scroll: "./images/scrollWhite.png"
+            }, {
+                background: "./images/sealions.jpg",
+                logo: "./images/logo.png",
+                scroll: "./images/scroll.png"
+            }, {
+                background: "./images/notreDame.jpg",
+                logo: "./images/logo-white.png",
+                scroll: "./images/scrollWhite.png"
+            });
+            var randomNum = Math.floor(Math.random() * backgroundImage.length);
+            //Use getElementById to set the background image value to the randomly selected image from the array.*/
+            //Use that variable to select an item from an array of background image paths. (Arrays are indexed starting at zero).
+            document.getElementById('randomImage').style.backgroundImage = "url(" + backgroundImage[randomNum].background + ")";
+            document.getElementById('logo').src = backgroundImage[randomNum].logo;
+            document.getElementById('scrolling').src = backgroundImage[randomNum].scroll;
+            //console.log(document.getElementById('randomImage').style.backgroundImage);
+        }
+    </script>
+
+</head>
+
+<body onload="randoBackground()">
+    <div id="randomImage">
+        <header>
+            <!-- <img class="polar-bear" src="images/polarBear.jpg" alt="A polar bear on the Arctic ice"> -->
+            <div>
+                <img class="logo" id="logo" src="images/logo-white.png" alt="">
+            </div>
+            <div>
+                <nav>
+                    <a class="nav button" href="">About</a>
+                    <a class="nav button" href="">Blog</a>
+                    <a class="nav button" href="">Clips</a>
+                    <a class="nav button" href="">Contact</a>
+                </nav>
+            </div>
+            <div>
+                <img class="scroll" id="scrolling" src="images/scrollWhite.png" alt="" width=200>
+            </div>
+        </header>
+    </div>
+    <!-- end bg -->
+
+    <section>
+        <div>
+            <hr>
+            <img class="portrait" src="images/headshot.jpg" alt="Jennifer Buege">
+            <h1 class="intro">Hello! I'm Jennifer Buege, <br> a writer, editor and photographer <br> based in Minneapolis. I focus on food and travel <br> but occasionally throw in something <br> just because it catches my interest.
+            </h1>
+        </div>
+        <br>
+        <br>
+    </section>
+
+    <!-- Photo Grid -->
+    <div class="row">
+        <div class="column">
+            <h2>{ Blog }</h2>
+            <a href="">
+                <img src="images/jaguarYawning.jpg" style="width:100%"></a>
+            <p class="teaser-blurb">Join me on my latest adventure, whether that's in farflung spots around the globe or in my kitchen, trying a new recipe.</p>
+        </div>
+        <div class="column">
+            <h2>{ Clips }</h2>
+            <a href="">
+                <img src="images/galapagos2.jpg" style="width:100%"></a>
+            <p class="teaser-blurb">Find in-depth feature articles (a few featuring my own photography) and quicker hits from yours truly.</p>
+        </div>
+        <div class="column">
+            <h2>{ About Me }</h2>
+            <a href="">
+                <img src="images/lemur.jpg" style="width:100%"></a>
+            <p class="teaser-blurb">The who, what, where and why of the human behind this site &#8212; with a few random tidbits thrown in.</p>
+        </div>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--
+			-->
+
+    </div>
+    </section>
+
+
+    <footer>
+        <a href="https://www.instagram.com/jlb_travels/" target="_blank">
+            <i class="fab fa-instagram fa-3x"></i></a>
+        <a href="https://www.flickr.com/photos/buege/" target="_blank">
+            <i class="fab fa-flickr fa-3x"></i></a>
+        <a href="https://www.facebook.com/jbuege/" target="_blank">
+            <i class="fab fa-facebook-square fa-3x"></i></a>
+        <a href="https://twitter.com/foodgurl" target="_blank">
+            <i class="fab fa-twitter fa-3x"></i></a>
+        <a href="https://www.pinterest.com/jbuege" target="_blank">
+            <i class="fab fa-pinterest-square fa-3x"></i></a>
+        <span class="footer-text">&#169; 2021 Jennifer Buege</span>
+    </footer>
+</body>

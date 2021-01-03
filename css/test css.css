@@ -1,0 +1,44 @@
+.polar-bear {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	margin: 0; 
+	background-position: center;
+  	background-repeat: no-repeat;
+  	z-index: -1;
+}
+body {
+	background-color: rgba(22, 209, 228,.5); 
+}
+.logo {
+	display: inline-block;
+	width: 20%;
+	float: left;
+}
+header nav {
+	font-size: 100%;
+}
+header nav a {
+	float: right;
+	border-radius: 5px;
+	text-decoration: none;
+	display: inline-block;
+	width: 7%;
+	color: #fff;
+	margin: 20px 20px 10px 10px; 
+	padding: 5px;
+	font-weight: bold;
+	background-color: rgba(22, 209, 228, .5);
+	text-align: center;
+
+}
+.scroll {
+	position: absolute;
+	left: 43%;
+	top: 90%;
+	margin: 0 auto;
+	height: 15%;
+	width: 15%;
+}
+
+
