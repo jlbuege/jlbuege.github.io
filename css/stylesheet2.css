@@ -135,7 +135,7 @@ h2 {
 
 .teaser-blurb {
     text-align: center;
-    font-family: "Geneva";
+    font-family: 'EB Garamond', serif;
     font-size: large;
 }
 
@@ -185,6 +185,24 @@ footer {
     /* IE10 */
     flex-wrap: wrap;
     padding: 0 4px;
+}
+
+.aboutMe img {
+    width: 200px;
+    margin-right: 2%;
+    display: inline-block;
+    float: left;
+}
+
+.aboutMe p {
+    font-size: 1.25em;
+    font-family: 'EB Garamond', serif;
+}
+
+.container {
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: justify;
 }
 
 
