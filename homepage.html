@@ -2,18 +2,18 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
     <title>Jennifer Buege</title>
-    <link rel="stylesheet" href="css/stylesheet2.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    <link rel=" stylesheet " href="css/stylesheet2.css ">
+    <link rel="preconnect " href="https://fonts.gstatic.com ">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap " rel="stylesheet ">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Shadows+Into+Light+Two&display=swap " rel="stylesheet ">
 
     <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/f6758dd020.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f6758dd020.js " crossorigin="anonymous "></script>
 
     <!--Javascript function -->
-    <script type="text/javascript">
+    <script type="text/javascript ">
         //Write a javascript function that is called onLoad (Put this function inside <script> in the HTML document).
         //Generate a random number from 0 - 3 and store it in a variable.
         function randoBackground() {
@@ -38,7 +38,7 @@
             var randomNum = Math.floor(Math.random() * backgroundImage.length);
             //Use getElementById to set the background image value to the randomly selected image from the array.*/
             //Use that variable to select an item from an array of background image paths. (Arrays are indexed starting at zero).
-            document.getElementById('randomImage').style.backgroundImage = "url(" + backgroundImage[randomNum].background + ")";
+            document.getElementById('randomImage').style.backgroundImage = "url( " + backgroundImage[randomNum].background + ") ";
             document.getElementById('logo').src = backgroundImage[randomNum].logo;
             document.getElementById('scrolling').src = backgroundImage[randomNum].scroll;
             //console.log(document.getElementById('randomImage').style.backgroundImage);
@@ -46,23 +46,23 @@
     </script>
 </head>
 
-<body onload="randoBackground()">
+<body onload="randoBackground() ">
     <div id="randomImage">
         <header>
-            <!-- <img class="polar-bear" src="images/polarBear.jpg" alt="A polar bear on the Arctic ice"> -->
+            <!-- <img class="polar-bear " src="images/polarBear.jpg " alt="A polar bear on the Arctic ice "> -->
             <div>
-                <img class="logo" id="logo" src="images/logo-white.png" alt="">
+                <img class="logo" id="logo" src="images/logo-white.png" alt=" ">
             </div>
             <div>
                 <nav>
-                    <a class="nav button" href="">About</a>
-                    <a class="nav button" href="">Blog</a>
-                    <a class="nav button" href="">Clips</a>
-                    <a class="nav button" href="">Contact</a>
+                    <a class="nav button" href=" ">About</a>
+                    <a class="nav button" href=" ">Blog</a>
+                    <a class="nav button" href=" ">Clips</a>
+                    <a class="nav button" href=" ">Contact</a>
                 </nav>
             </div>
             <div>
-                <img class="scroll" id="scrolling" src="images/scrollWhite.png" alt="" width=200>
+                <img class="scroll" id="scrolling" src="images/scrollWhite.png" alt=" " width=200>
             </div>
         </header>
     </div>
@@ -84,19 +84,19 @@
         <div class="column">
             <h2>{ Blog }</h2>
             <a href="blog.html">
-                <img src="images/jaguarYawning.jpg" style="width:100%"></a>
+                <img src="images/jaguarYawning.jpg" style="width:100%" alt="A yawning jaguar"></a>
             <p class="teaser-blurb">Join me on my latest adventure, whether that's in farflung spots around the globe or in my kitchen, trying a new recipe.</p>
         </div>
         <div class="column">
             <h2>{ Clips }</h2>
             <a href="clips.html">
-                <img src="images/galapagos2.jpg" style="width:100%"></a>
+                <img src="images/galapagos2.jpg" style="width:100%" alt="Open spread for my feature on the Galapagos Islands"></a>
             <p class="teaser-blurb">Find in-depth feature articles (a few featuring my own photography) and quicker hits from yours truly.</p>
         </div>
         <div class="column">
             <h2>{ About Me }</h2>
             <a href="aboutMe.html">
-                <img src="images/lemur.jpg" style="width:100%"></a>
+                <img src="images/lemur.jpg" style="width:100%" alt="A lemur sitting on my shoulder"></a>
             <p class="teaser-blurb">The who, what, where and why of the human behind this site &#8212; with a few random tidbits thrown in.</p>
         </div>
 
@@ -107,11 +107,6 @@
     <br>
     <!--
 			-->
-
-    </div>
-    </section>
-
-
     <footer>
         <a href="https://www.instagram.com/jlb_travels/" target="_blank">
             <i class="fab fa-instagram fa-3x"></i></a>

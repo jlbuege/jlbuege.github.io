@@ -19,6 +19,10 @@ Grid
   ========================================
 */
 
+* {
+    box-sizing: border-box;
+}
+
 html,
 body {
     height: 100%;
@@ -208,13 +212,41 @@ footer {
 
 /* Create four equal columns that sits next to each other */
 
+
+/*.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.flex-container img {
+    max-width: 50%;
+    border-radius: 5px;
+}
+
+.flex-item-one {
+    padding: 10px;
+    flex: 20%;
+}
+
+.flex-item-two {
+    padding: 10px;
+    flex: 20%;
+}
+
+.flex-item-three {
+    padding: 10px;
+    flex: 20%;
+} */
+
 .column {
     flex: 33%;
     max-width: 33%;
     padding: 0 3% 0 3%;
 }
 
-.column img {
+.column img,
+.column-clips img {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
@@ -225,6 +257,13 @@ footer {
     flex: 25%;
     max-width: 25%;
     padding: 0 3% 0 3%;
+}
+
+.column-clips {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 3% 0 3%;
+    text-align: center;
 }
 
 
@@ -241,6 +280,15 @@ footer {
         flex: 50%;
         max-width: 50%;
     }
+    .column-clips {
+        flex: 50%;
+        max-width: 50%;
+    }
+    /*.flex-item-one,
+    .flex-item-two,
+    .flex-item-three {
+        flex: 50%;
+    }*/
 }
 
 
@@ -252,9 +300,15 @@ footer {
         flex: 100%;
         max-width: 100%;
     }
-    .column-blog {
+    .column-blog,
+    .column-clips {
         -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;
     }
+    /*.flex-item-one,
+    .flex-item-two,
+    .flex-item-three {
+        flex: 100%;
+    }*/
 }
