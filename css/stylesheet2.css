@@ -237,7 +237,21 @@ footer {
 .flex-item-three {
     padding: 10px;
     flex: 20%;
-} */
+} 
+
+.flex-grid {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+  align-items: center;
+}
+.flex-grid > div {
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 18px;
+}*/
 
 .column {
     flex: 33%;
