@@ -15,54 +15,6 @@
     <!-- JavaScript source-->
     <script src="javascript/javascript.js"></script>
 
-    <!--Javascript function -->
-    <script type="text/javascript ">
-        //Write a javascript function that is called onLoad (Put this function inside <script> in the HTML document).
-        //Generate a random number from 0 - 3 and store it in a variable.
-        function randoBackground() {
-            //Define an array of background image paths inside the function.
-            var backgroundImage = new Array({
-                background: "./images/polarBear.jpg",
-                logo: "./images/logo-white.png",
-                scroll: "./images/scroll.png",
-                responsiveImage: "./images/jaguar.jpg"
-            }, {
-                background: "./images/sifaka.jpg",
-                logo: "./images/logo-white.png",
-                scroll: "./images/scrollWhite.png",
-                responsiveImage: "./images/jaguar.jpg"
-            }, {
-                background: "./images/sealions.jpg",
-                logo: "./images/logo.png",
-                scroll: "./images/scroll.png",
-                responsiveImage: "./images/jaguar.jpg"
-            }, {
-                background: "./images/notreDame.jpg",
-                logo: "./images/logo-white.png",
-                scroll: "./images/scrollWhite.png",
-                responsiveImage: "./images/jaguar.jpg"
-            });
-            var randomNum = Math.floor(Math.random() * backgroundImage.length);
-            //Use getElementById to set the background image value to the randomly selected image from the array.*/
-            //Use that variable to select an item from an array of background image paths. (Arrays are indexed starting at zero).
-            document.getElementById('logo').src = backgroundImage[randomNum].logo;
-            document.getElementById('scrolling').src = backgroundImage[randomNum].scroll;
-
-            /* if the screen is smaller than 900 px, use responsiveImage*/
-
-            if (window.innerWidth < 900) {
-                document.getElementById('randomImage').style.backgroundImage = "url( " + backgroundImage[randomNum].responsiveImage + ") ";
-
-            }
-
-            /* if the screen is 900 px or larger, use background*/
-            else {
-                document.getElementById('randomImage').style.backgroundImage = "url( " + backgroundImage[randomNum].background + ") ";
-
-            }
-            //console.log(document.getElementById('randomImage').style.backgroundImage);
-        }
-    </script>
 </head>
 
 <body onload="randoBackground() ">
@@ -70,19 +22,18 @@
         <header>
             <!-- <img class="polar-bear " src="images/polarBear.jpg " alt="A polar bear on the Arctic ice "> -->
             <div>
-                <img class="logo" id="logo" src="images/logo-white.png" alt=" ">
+                <a href="homepage.html"><img class="logo" id="logo" src="images/logo.png" alt=""></a>
             </div>
             <div class="topnav" id="myTopnav">
                 <nav>
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                         <i class="fa fa-bars"></i>
                     </a>
-                    <a class="nav button" href=" " class="active">About</a>
-                    <a class="nav button" href=" ">Blog</a>
-                    <a class="nav button" href=" ">Clips</a>
-                    <a class="nav button" href=" ">Contact</a>
+                    <a class="nav button" href="contact.html">Contact</a>
+                    <a class="nav button" href="clips.html">Clips</a>
+                    <a class="nav button" href="blog.html">Blog</a>
+                    <a class="nav button" href="about.html">About</a>
                 </nav>
-
             </div>
             <div>
                 <img class="scroll" id="scrolling" src="images/scrollWhite.png" alt=" " width=200>
@@ -118,7 +69,7 @@
         </div>
         <div class="column">
             <h2>{ About Me }</h2>
-            <a href="aboutMe.html">
+            <a href="about.html">
                 <img src="images/lemur.jpg" style="width:100%" alt="A lemur sitting on my shoulder"></a>
             <p class="teaser-blurb">The who, what, where and why of the human behind this site &#8212; with a few random tidbits thrown in.</p>
         </div>

@@ -41,14 +41,6 @@ body {
 }
 
 .topnav a {
-    /*    float: right;
-    display: block;
-    color: rgb(22, 209, 228);
-    text-align: center;
-    padding: 14px 16px;
-    margin-right: 2%;
-    text-decoration: none;
-    font-size: 2em;*/
     float: right;
     border-radius: 5px;
     text-decoration: none;
@@ -269,6 +261,16 @@ footer {
     text-align: justify;
 }
 
+.contact img {
+    width: 100%;
+}
+
+.contact p {
+    font-size: 1.25em;
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+}
+
 
 /* Create four equal columns that sits next to each other */
 
@@ -366,7 +368,8 @@ footer {
 }
 
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other 
+To-do: To be mobile first, this requires swapping media queries with above CSS*/
 
 @media screen and (max-width: 600px) {
     .column {
@@ -385,9 +388,32 @@ footer {
     .flex-item-three {
         flex: 100%;
     }*/
+    .portrait {
+        display: inline;
+        width: 50%;
+    }
+    .scroll {
+        width: 20%;
+    }
+    .logo {
+        width: 40%;
+    }
+    .scroll {
+        width: 20%;
+    }
+    .logo {
+        width: 40%;
+    }
+    .intro {
+        width: 100%;
+    }
+    .aboutMe img {
+        width: 100%;
+        margin-bottom: 3%;
+    }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .topnav a {
         display: none;
     }
@@ -396,9 +422,16 @@ footer {
         display: block;
         background-color: rgba(22, 209, 228, 0);
     }
+    .portrait {
+        display: inline;
+        width: 50%;
+    }
+    .intro {
+        width: 100%;
+    }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .topnav.responsive {
         position: relative;
         float: right;
