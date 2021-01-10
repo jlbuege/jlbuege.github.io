@@ -202,6 +202,15 @@ footer {
     line-height: 75px;
 }
 
+.footer {
+    flex-shrink: 0;
+}
+
+.footer-text {
+    font-size: .75em;
+    color: seashell;
+}
+
 .fa-instagram,
 .fa-flickr,
 .fa-facebook-square,
@@ -213,16 +222,12 @@ footer {
     margin: 0 1% 0 1%;
 }
 
-.footer-text {
-    font-size: .75em;
-    color: seashell;
+.fa-bars {
+    color: #000;
 }
 
-.footer {
-    flex-shrink: 0;
-}
 
-.teaser-photo {
+/*.teaser-photo {
     display: inline-block;
     width: 100%;
     height: auto;
@@ -231,7 +236,7 @@ footer {
     border-color: black!important;
     border-width: 3px!important;
     border-radius: 5px;
-}
+}*/
 
 .row {
     display: -ms-flexbox;
@@ -241,6 +246,11 @@ footer {
     /* IE10 */
     flex-wrap: wrap;
     padding: 0 4px;
+}
+
+.aboutMe {
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .aboutMe img {
@@ -256,9 +266,11 @@ footer {
 }
 
 .container {
-    margin-left: 20%;
-    margin-right: 20%;
     text-align: justify;
+}
+
+.container-clips {
+    margin: 0 20%;
 }
 
 .contact img {
@@ -321,9 +333,30 @@ footer {
     padding: 0 3% 0 3%;
 }
 
+.column-clips {
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 3% 0 3%;
+}
+
+.column-clips h2 {
+    color: rgb(22, 209, 228);
+    font-size: 1.5em;
+    font-family: 'EB Garamond';
+    /*line-height: .5em;*/
+}
+
+.column-clips p {
+    font-style: italic;
+    font-family: 'EB Garamond';
+    /*line-height: .5em;*/
+    margin-bottom: 20%;
+}
+
 .column img,
 .column-clips img {
     margin-top: 8px;
+    margin-bottom: -10px;
     vertical-align: middle;
     width: 100%;
     border-radius: 5px;
@@ -335,11 +368,9 @@ footer {
     padding: 0 3% 0 3%;
 }
 
-.column-clips {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 3% 0 3%;
-    text-align: center;
+.column-blog img {
+    width: 100%;
+    border-radius: 5px;
 }
 
 
@@ -395,14 +426,11 @@ To-do: To be mobile first, this requires swapping media queries with above CSS*/
     .scroll {
         width: 20%;
     }
-    .logo {
-        width: 40%;
-    }
     .scroll {
         width: 20%;
     }
     .logo {
-        width: 40%;
+        width: 60%;
     }
     .intro {
         width: 100%;
