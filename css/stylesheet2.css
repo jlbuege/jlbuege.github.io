@@ -283,50 +283,6 @@ footer {
     text-align: center;
 }
 
-
-/* Create four equal columns that sits next to each other */
-
-
-/*.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-.flex-container img {
-    max-width: 50%;
-    border-radius: 5px;
-}
-
-.flex-item-one {
-    padding: 10px;
-    flex: 20%;
-}
-
-.flex-item-two {
-    padding: 10px;
-    flex: 20%;
-}
-
-.flex-item-three {
-    padding: 10px;
-    flex: 20%;
-} 
-
-.flex-grid {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-  align-items: center;
-}
-.flex-grid > div {
-  width: 200px;
-  margin: 10px;
-  text-align: center;
-  line-height: 25px;
-  font-size: 18px;
-}*/
-
 .column {
     flex: 33%;
     max-width: 33%;
@@ -391,11 +347,6 @@ footer {
         flex: 50%;
         max-width: 50%;
     }
-    /*.flex-item-one,
-    .flex-item-two,
-    .flex-item-three {
-        flex: 50%;
-    }*/
 }
 
 
@@ -414,11 +365,6 @@ To-do: To be mobile first, this requires swapping media queries with above CSS*/
         flex: 100%;
         max-width: 100%;
     }
-    /*.flex-item-one,
-    .flex-item-two,
-    .flex-item-three {
-        flex: 100%;
-    }*/
     .portrait {
         display: inline;
         width: 50%;
