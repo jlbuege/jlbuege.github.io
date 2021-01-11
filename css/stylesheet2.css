@@ -208,6 +208,9 @@ body {
     vertical-align: middle;
     width: 100%;
     border-radius: 5px;
+}
+
+.column-clips img {
     border: 2px solid #A9A9A9;
 }
 
@@ -255,6 +258,7 @@ body {
 
 .column-clips p {
     font-style: italic;
+    font-size: 1.25em;
     font-family: 'EB Garamond';
     /* line-height: .5em; */
     margin-bottom: 20%;
