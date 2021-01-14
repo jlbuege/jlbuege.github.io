@@ -35,6 +35,36 @@ body {
     margin: 10px 0 0 10px;
 }
 
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 200%;
+}
+
+h2 {
+    color: rgb(22, 209, 228);
+    text-align: center;
+    font-size: 200%;
+}
+
+
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+
 .topnav {
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0)
@@ -65,37 +95,8 @@ body {
     background: rgba(22, 209, 228, 0);
 }
 
-
-/*.nav {
-    float: right;
-    border-radius: 5px;
-    text-decoration: none;
-    width: 8%;
-    color: #fff;
-    font-size: 150%;
-    font-family: Georgia;
-    margin: 20px 20px 10px 10px;
-    padding: 1%;
-    font-weight: bold;
-    background-color: rgba(22, 209, 228, .75);
-    text-align: center;
-}*/
-
-
-/*
-  ========================================
-  Blog page
-  ========================================
-*/
-
-.blog {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.content {
-    flex: 1 0 auto;
+.fa-bars {
+    color: #000;
 }
 
 
@@ -130,11 +131,12 @@ body {
     margin-left: -6%;
 }
 
-.headshot img {
-    width: 175px;
+.portrait {
+    display: inline-block;
+    width: 200px;
     height: auto;
     border-radius: 50%;
-    margin: 30px 0 30px 0;
+    margin: 5% 3% 0 22%;
 }
 
 .intro {
@@ -145,25 +147,40 @@ body {
     color: rgba(0, 0, 0, .7);
 }
 
-.portrait {
-    display: inline-block;
-    width: 200px;
-    height: auto;
-    border-radius: 50%;
-    margin: 5% 3% 0 22%;
-}
-
 .teaser-blurb {
     text-align: center;
     font-family: 'EB Garamond', serif;
-    font-size: large;
+    font-size: 1.5em;
 }
 
-h1 {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-size: 200%;
+
+/*.headshot img {
+    width: 175px;
+    height: auto;
+    border-radius: 50%;
+    margin: 30px 0 30px 0;
+}*/
+
+
+/*.blurb-photo img {
+    width: 230px;
+    height: 154px;
+    border: 2px white solid;
+    border-radius: 5px;
+    margin: 30px 0 30px 0;
+}*/
+
+
+/*
+  ========================================
+  Blog, About, Clips and Contact pages
+  ========================================
+*/
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .blog h1,
@@ -174,18 +191,113 @@ h1 {
     font-size: 4em;
 }
 
-h2 {
-    color: rgb(22, 209, 228);
-    text-align: center;
-    font-size: 200%;
+.content {
+    flex: 1 0 auto;
 }
 
-.blurb-photo img {
-    width: 230px;
-    height: 154px;
-    border: 2px white solid;
+.column {
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 3% 0 3%;
+}
+
+.column img,
+.column-clips img {
+    margin-top: 8px;
+    margin-bottom: -10px;
+    vertical-align: middle;
+    width: 100%;
     border-radius: 5px;
-    margin: 30px 0 30px 0;
+}
+
+.column-clips img {
+    border: 2px solid #A9A9A9;
+}
+
+.column-blog {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 3% 0 3%;
+}
+
+.column-blog p {
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+    line-height: 1em;
+    margin-bottom: 20%;
+}
+
+.column-blog p:first-of-type {
+    font-style: italic;
+    line-height: 0em;
+}
+
+.column-blog img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.column-blog h2,
+.column-clips h2 {
+    color: rgb(22, 209, 228);
+    font-size: 1.5em;
+    font-family: 'EB Garamond', serif;
+    /*line-height: .5em;*/
+}
+
+.column-blog a,
+.column-clips a {
+    text-decoration: none;
+}
+
+.column-clips {
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 3% 0 3%;
+}
+
+.column-clips p {
+    font-style: italic;
+    font-size: 1.25em;
+    font-family: 'EB Garamond';
+    /* line-height: .5em; */
+    margin-bottom: 20%;
+}
+
+.container {
+    text-align: justify;
+}
+
+.container-clips {
+    margin: 0 20%;
+}
+
+.aboutMe {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.aboutMe img {
+    width: 200px;
+    margin-right: 2%;
+    display: inline-block;
+    float: left;
+}
+
+.aboutMe p {
+    font-size: 1.25em;
+    font-family: 'EB Garamond', serif;
+}
+
+.contact img {
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+.contact p {
+    font-size: 1.25em;
+    font-family: 'EB Garamond', serif;
+    text-align: center;
 }
 
 
@@ -222,112 +334,12 @@ footer {
     margin: 0 1% 0 1%;
 }
 
-.fa-bars {
-    color: #000;
-}
 
-
-/*.teaser-photo {
-    display: inline-block;
-    width: 100%;
-    height: auto;
-    margin: 2% auto;
-    border-style: solid!important;
-    border-color: black!important;
-    border-width: 3px!important;
-    border-radius: 5px;
-}*/
-
-.row {
-    display: -ms-flexbox;
-    /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap;
-    /* IE10 */
-    flex-wrap: wrap;
-    padding: 0 4px;
-}
-
-.aboutMe {
-    margin-left: 20%;
-    margin-right: 20%;
-}
-
-.aboutMe img {
-    width: 200px;
-    margin-right: 2%;
-    display: inline-block;
-    float: left;
-}
-
-.aboutMe p {
-    font-size: 1.25em;
-    font-family: 'EB Garamond', serif;
-}
-
-.container {
-    text-align: justify;
-}
-
-.container-clips {
-    margin: 0 20%;
-}
-
-.contact img {
-    width: 100%;
-}
-
-.contact p {
-    font-size: 1.25em;
-    font-family: 'EB Garamond', serif;
-    text-align: center;
-}
-
-.column {
-    flex: 33%;
-    max-width: 33%;
-    padding: 0 3% 0 3%;
-}
-
-.column-clips {
-    flex: 33%;
-    max-width: 33%;
-    padding: 0 3% 0 3%;
-}
-
-.column-clips h2 {
-    color: rgb(22, 209, 228);
-    font-size: 1.5em;
-    font-family: 'EB Garamond';
-    /*line-height: .5em;*/
-}
-
-.column-clips p {
-    font-style: italic;
-    font-family: 'EB Garamond';
-    /*line-height: .5em;*/
-    margin-bottom: 20%;
-}
-
-.column img,
-.column-clips img {
-    margin-top: 8px;
-    margin-bottom: -10px;
-    vertical-align: middle;
-    width: 100%;
-    border-radius: 5px;
-}
-
-.column-blog {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 3% 0 3%;
-}
-
-.column-blog img {
-    width: 100%;
-    border-radius: 5px;
-}
+/*
+  ========================================
+  Media queries
+  ========================================
+*/
 
 
 /* Responsive layout - makes a two column-layout instead of four columns */
