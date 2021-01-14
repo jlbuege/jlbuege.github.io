@@ -359,6 +359,19 @@ footer {
         flex: 50%;
         max-width: 50%;
     }
+    .scroll {
+        width: 20%;
+    }
+    .logo {
+        width: 60%;
+    }
+    .intro {
+        width: 100%;
+    }
+    .aboutMe img {
+        width: 100%;
+        margin-bottom: 3%;
+    }
 }
 
 
@@ -380,9 +393,6 @@ To-do: To be mobile first, this requires swapping media queries with above CSS*/
     .portrait {
         display: inline;
         width: 50%;
-    }
-    .scroll {
-        width: 20%;
     }
     .scroll {
         width: 20%;
